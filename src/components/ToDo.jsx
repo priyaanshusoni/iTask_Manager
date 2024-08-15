@@ -19,8 +19,9 @@ const inputref = useRef();
 const add =()=>{
    const inputText = inputref.current.value.trim(); //trim is just used to remove some extra space
    console.log(inputText);
-if(inputText==" "){
-  return null;
+if(inputText===""){
+   alert("Please add some task");
+  return ;
 }
    const newTodo = {
     id: Date.now(),
